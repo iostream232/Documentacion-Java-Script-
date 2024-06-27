@@ -1,0 +1,4 @@
+Mi impresión es que es más o menos un estándar nombrar a tu archivo principal como index.js. Tiene sentido también que pongamos nuestro módulo de servidor en un archivo llamado server.js. 
+Empecemos con el módulo del servidor. Crea el archivo server.js en el directorio raíz de tu proyecto, y llénalo con el código siguiente: 
+
+var http = require("http"); http.createServer(function(request, response) { response.writeHead(200, {"Content‐Type": "text/html"}); response.write("Hola Mundo"); response.end(); }).listen(8888);
